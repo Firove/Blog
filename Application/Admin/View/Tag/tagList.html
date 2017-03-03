@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>栏目列表</title>
+		<load file="__PUBLIC__/Admin/css/common.css" />
+		<load file="__PUBLIC__/Admin/css/catlist.css" />
+		
+	</head>
+	<body>
+		<include file="./Application/Admin/View/Public/top.html" />
+		
+		<div id="content">
+			<include file="./Application/Admin/View/Public/left.html" />
+            <div id='right'>
+            	<table border="1px" cellspacing="0" cellpadding="0">
+            		<tr><th style="width: 400px;">标签名称</th><th style="width: 80px;">文章数</th><th style="width: 120px;">操作</th></tr>
+            		<volist name="tags" id="vo">
+            		<tr><td>{$vo.tag_name}</td><td>{$vo.art_num}</td>
+            			<td>
+            			<a href="{:U('Admin/Tag/tagEdit?tag_id='.$vo['tag_id'])}">修改</a>
+            			</td></tr>		
+            		</volist>
+            	</table>
+
+			</div>
+		</div>
+		
+
+		
+	</body>
+</html>

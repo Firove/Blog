@@ -1,0 +1,59 @@
+.links,.current,.jinyong{
+	float: left;
+	margin: 2px;
+	padding: 6px 8px;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+.links{
+	display: block;
+	background-color: rgba(10,10,10,0.6);
+	color: cornflowerblue;
+}
+.current{
+	background-color: cornflowerblue;
+	color: rgba(10,10,10,0.6);
+}
+a:hover{
+	color: white;
+}
+
+.jinyong{
+	background-color: rgba(10,10,10,0.6);
+	color: cornflowerblue;
+	cursor: not-allowed;
+}
+/*.wrap{
+	float: left;
+	position: relative;
+	left: 50%;
+}
+.nav{
+	overflow: hidden;
+	float: left;
+	position: relative;
+	left: -50%;
+}*/
+@media only screen and (min-width: 768px) {
+	.links,.current,.jinyong{
+		padding: 8px 10px;
+		border-radius: 5px;
+		font-size: 15px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.links,.current,.jinyong{
+		padding: 8px 10px;
+		border-radius: 5px;
+		font-size: 20px;
+	}
+	
+}
+@media only screen and (min-width: 1200px) {
+	.links,.current,.jinyong{
+		padding: 10px 12px;
+		border-radius: 5px;
+		font-size: 25px;
+	}
+}

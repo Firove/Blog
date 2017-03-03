@@ -1,0 +1,15 @@
+.panel{
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 10px;
+	margin: 0 10px 14px 14px;
+	color: gray;
+}
+
+.biaoqian{
+	display: inline-block;
+	color: white;
+	padding: 0px 10px;
+	margin: 3px 8px;
+	background-color: cornflowerblue;
+	border-radius: 5px;
+}

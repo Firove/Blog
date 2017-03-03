@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>编辑文章</title>
+		<load file="__PUBLIC__/Admin/css/common.css" />
+		<load file="__PUBLIC__/Admin/css/artadd.css" />
+		<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/dist/css/wangEditor.min.css">
+	</head>
+	<body>
+		<include file="./Application/Admin/View/Public/top.html" />
+		<div id="content">
+			<include file="./Application/Admin/View/Public/left.html" />
+            <div id='right'>
+            	<form action="{:U('Admin/Art/update?art_id='.$oneArt['art_id'])}" method="post" enctype="multipart/form-data">
+            		标题：<input type="text" name="title" class="txt" value="{$oneArt['title']}" /><br /><br />
+            		
+            		<p>栏目：</p><select name="cat_id" class="xiala">
+            			<volist name="catlist" id="vo">
+            				<if condition="$vo.cat_id eq $oneArt['cat_id']">
+            					<option value="{$vo.cat_id}" selected="selected">{$vo.cat_name}</option>
+            					<else/>
+            					<option value="{$vo.cat_id}">{$vo.cat_name}</option>
+            				</if>            				
+            			</volist>
+							
+						  </select><br /><br />
+					标签：<input type="text" name="tags" class="txt" value="{$oneArt['tags']}"/><br /><br />
+					头图：<input type="file" name="small_img" class="txt"/><br /><br />  
+					<label style="vertical-align: top;">内容：</label><br />
+            		<textarea id="textarea1" name="content">{$oneArt['content']}
+    				</textarea><br /><br />
+    				
+            		<script type="text/javascript" src="__PUBLIC__/Front/js/jquery-3.1.1.min.js"></script>
+    				<script type="text/javascript" src="__PUBLIC__/Admin/dist/js/wangEditor.min.js"></script>
+    				<script type="text/javascript">
+        				$(function () {
+           					var editor = new wangEditor('textarea1');
+           					editor.config.jsFilter = false;//关闭<script>标签过滤
+           					editor.config.uploadImgUrl = "{:U('Admin/Art/upload')}";//打开上传本地图片
+           					//editor.config.uploadHeaders = {'Accept': 'text/x-json'};
+           					editor.config.uploadImgFileName = 'file';
+            				editor.create();
+        				});
+    				</script>            		
+            		<input type="submit" class="btn" value="修改"/>
+            	</form>
+            	
+			</div>
+		</div>	
+		
+	</body>
+</html>

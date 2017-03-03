@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>一川烟草，满城风絮</title>
+		<meta name="viewport" content="width=divice-width,initial-scale=1.0,user-scalable=no" />
+		<link href="__PUBLIC__/Front/css/bootstrap.min.css" rel="stylesheet">
+		<link href="__PUBLIC__/Front/css/firstPage.css" rel="stylesheet">
+		<link href="__PUBLIC__/Admin/css/fenyelinks.css" rel="stylesheet">
+		<link href="__PUBLIC__/Front/css/tag.css" rel="stylesheet">
+		<link href="__PUBLIC__/Front/css/header.css" rel="stylesheet">
+		<!--<script src="__PUBLIC__/Front/js/main.js"></script>-->
+	</head>
+	<body>
+		<include file="./Application/Front/View/Public/nav.html" />
+		
+		<div class="container">
+			<include file="./Application/Front/View/Public/header.html" />	
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">						
+					<volist name="list" id="vo">	
+						<div class="row">
+							<div class="media art">
+								<div class="media-body">
+									<h2 class="media-heading title"><a href="{:U('Front/Art/artPage?art_id='.$vo['art_id'])}">{$vo.title}</a></h2>
+									<span class="xiao">时间：{$vo.pubtime}</span>&nbsp;&nbsp;
+									<span class="xiao">栏目：{$vo.cat_name}</span>&nbsp;&nbsp;
+									<span class="xiao">标签：{$vo.tag_str}</span>
+									<div class="zhengwen">{$vo.content}</div>
+								</div>
+								<div class="media-left media-middle" style="solid;padding-left: 5px;padding-right: 5px;">
+									<a href="{:U('Front/Art/artPage?art_id='.$vo['art_id'])}">
+										<img src="{$vo['small_img']}" class="media-object small-img"/>
+									</a>
+								</div>
+							</div>
+						</div>						
+					</volist>					
+					<div class="wrap" style="margin-bottom: 20px;">
+	            		<div class="nav">
+	            			{$show}
+	            		</div>
+            		</div>					
+				</div>
+								
+				
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<!--标签面板-->
+					<div class="row">
+						<include file="./Application/Front/View/Public/tagPanel.html" />
+					</div><br />
+					<!--标签面板-->
+					<!--列表面板-->
+					<div class="row">
+						<div class="panel panel-default fntcol">
+							<div class="panel-body">
+								<span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>&nbsp;&nbsp;<b>博客分类</b>
+							<hr style="color: black;"/>
+								<volist name="catlist" id="vo">
+									<a class="cat" href="{:U('Front/First/firstPage?cat_id='.$vo['cat_id'].'&cz=2')}">
+										{$vo.cat_name}({$vo.art_num})<br /><br />
+									</a>							
+								</volist>
+														
+							</div>
+							
+						</div>
+					</div>
+					<!--列表面板结束-->
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<script src="__PUBLIC__/Front/js/jquery-3.1.1.min.js"></script>
+		<script src="__PUBLIC__/Front/js/bootstrap.min.js"></script>
+	</body>
+	
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>文章</title>
+		<meta name="viewport" content="width=divice-width,initial-scale=1.0,user-scalable=no" />
+		<link href="__PUBLIC__/Front/css/bootstrap.min.css" rel="stylesheet">
+		<link href="__PUBLIC__/Front/css/header.css" rel="stylesheet">
+		<link href="__PUBLIC__/Front/css/artPage.css" rel="stylesheet">
+		<link href="__PUBLIC__/Front/css/tag.css" rel="stylesheet">
+	</head>
+	<body>
+		<include file="./Application/Front/View/Public/nav.html" />
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">	
+					<div class="jumbotron" style="background-image: url('{$oneArt['small_img']}');background-size: 100% 100%;background-repeat: none;">
+						
+					</div>				
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="content">
+					<span class="title">{$oneArt['title']}</span><br />
+					<span class="xiao">时间：{$oneArt['pubtime']}</span>&nbsp;&nbsp;<span class="xiao">栏目：{$oneArt['cat_name']}</span>&nbsp;&nbsp;
+					<span class="xiao">标签：
+						<volist name="tags" id="vo">
+							<a class="biaoqian" href="{:U('Front/First/firstPage?cz=1&tag_id='.$vo['tag_id'])}">{$vo.tag_name}</a>
+						</volist>
+					</span>
+					<br /><br />
+					<div class="zhengwen">
+						{$oneArt['content']}
+					</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+					<!-- 多说评论框 start -->
+					<div class="ds-thread" data-thread-key="{$oneArt['art_id']}" data-title="{$oneArt['title']}" data-url="{:U('Front/Art/artPage?art_id='.$oneArt['art_id'])}"></div>
+					<!-- 多说评论框 end -->
+					<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+					<script type="text/javascript">
+					var duoshuoQuery = {short_name:"firove"};
+					(function() {
+						var ds = document.createElement('script');
+						ds.type = 'text/javascript';ds.async = true;
+						ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+						ds.charset = 'UTF-8';
+						(document.getElementsByTagName('head')[0] 
+						 || document.getElementsByTagName('body')[0]).appendChild(ds);
+					})();
+					</script>
+				<!-- 多说公共JS代码 end -->				
+				</div>
+			</div>
+			
+			
+		<script src="__PUBLIC__/Front/js/jquery-3.1.1.min.js"></script>
+		<script src="__PUBLIC__/Front/js/bootstrap.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,2284 @@
+[ 2017-02-25T16:46:18+08:00 ] ::1 /Blog/index.php/Admin/Art/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004539s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0097s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001379s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002587s ]
+
+[ 2017-02-25T16:46:21+08:00 ] ::1 /Blog/index.php/Admin/Art/artEdit/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001989s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0132s ]
+SQL: SELECT `tag_name` FROM `relationship` left join tag on relationship.tag_id=tag.tag_id  WHERE ( art_id=69 )  [ RunTime:0.0007s ]
+NOTIC: [2] implode(): Invalid arguments passed D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 127 行.
+SQL: SELECT `art_id`,`title`,`cat_id`,`small_img`,`content` FROM `art` WHERE ( art_id=69 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000306s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003005s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003195s ]
+
+[ 2017-02-25T16:46:27+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003066s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0121s ]
+SQL: UPDATE `art` SET `title`='fffffsssss啦啦啦',`cat_id`='2',`content`='    				<p>jjjj<br></p>    				' WHERE `art_id` = 69 [ RunTime:0.0511s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0114s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0005s ]
+NOTIC: [2] array_diff(): Argument #2 is not an array D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 203 行.
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('D')  [ RunTime:0.0005s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=69 ) [ RunTime:0.0004s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : insert ignore into relationship(art_id,tag_id) values(69,)
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : insert ignore into relationship(art_id,tag_id) values(69,)
+
+[ 2017-02-25T16:47:23+08:00 ] ::1 /Blog/index.php/Admin/Art/artEdit/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002553s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0125s ]
+SQL: SELECT `tag_name` FROM `relationship` left join tag on relationship.tag_id=tag.tag_id  WHERE ( art_id=69 )  [ RunTime:0.0007s ]
+NOTIC: [2] implode(): Invalid arguments passed D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 127 行.
+SQL: SELECT `art_id`,`title`,`cat_id`,`small_img`,`content` FROM `art` WHERE ( art_id=69 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000193s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001400s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001442s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001562s ]
+
+[ 2017-02-25T16:47:31+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001205s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0118s ]
+SQL: UPDATE `art` SET `title`='fffffsssss啦啦啦',`cat_id`='2',`content`='    				<p>jjjj<br></p>    				    				' WHERE `art_id` = 69 [ RunTime:0.0602s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0097s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0007s ]
+NOTIC: [2] array_diff(): Argument #2 is not an array D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 203 行.
+
+[ 2017-02-25T16:48:07+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0115s ]
+SQL: UPDATE `art` SET `title`='fffffsssss啦啦啦',`cat_id`='2',`content`='    				<p>jjjj<br></p>    				    				' WHERE `art_id` = 69 [ RunTime:0.0696s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0105s ]
+
+[ 2017-02-25T16:49:47+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001542s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0132s ]
+SQL: UPDATE `art` SET `title`='fffffsssss啦啦啦',`cat_id`='2',`content`='    				<p>jjjj<br></p>    				    				' WHERE `art_id` = 69 [ RunTime:0.0416s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0122s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0006s ]
+
+[ 2017-02-25T16:50:34+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0125s ]
+SQL: UPDATE `art` SET `title`='fffffsssss啦啦啦',`cat_id`='2',`content`='    				<p>jjjj<br></p>    				    				' WHERE `art_id` = 69 [ RunTime:0.0648s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0101s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0006s ]
+NOTIC: [2] array_diff(): Argument #2 is not an array D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 206 行.
+
+[ 2017-02-25T16:50:59+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000888s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001401s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0108s ]
+SQL: UPDATE `art` SET `title`='fffffsssss啦啦啦',`cat_id`='2',`content`='    				<p>jjjj<br></p>    				    				' WHERE `art_id` = 69 [ RunTime:0.0701s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0107s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0005s ]
+NOTIC: [2] array_diff(): Argument #2 is not an array D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 206 行.
+
+[ 2017-02-25T16:52:18+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001553s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0115s ]
+SQL: UPDATE `art` SET `title`='fffffsssss啦啦啦',`cat_id`='2',`content`='    				<p>jjjj<br></p>    				    				' WHERE `art_id` = 69 [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0116s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0005s ]
+NOTIC: [2] array_diff(): Argument #2 is not an array D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 206 行.
+
+[ 2017-02-25T16:56:30+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0123s ]
+SQL: UPDATE `art` SET `title`='fffffsssss啦啦啦',`cat_id`='2',`content`='    				<p>jjjj<br></p>    				    				' WHERE `art_id` = 69 [ RunTime:0.0555s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0104s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0125s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0006s ]
+NOTIC: [2] array_diff(): Argument #2 is not an array D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 208 行.
+
+[ 2017-02-25T16:56:57+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001429s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0124s ]
+SQL: UPDATE `art` SET `title`='fffffsssss啦啦啦',`cat_id`='2',`content`='    				<p>jjjj<br></p>    				    				' WHERE `art_id` = 69 [ RunTime:0.0462s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0104s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0006s ]
+
+[ 2017-02-25T16:57:11+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0119s ]
+SQL: UPDATE `art` SET `title`='fffffsssss啦啦啦',`cat_id`='2',`content`='    				<p>jjjj<br></p>    				    				' WHERE `art_id` = 69 [ RunTime:0.1424s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0262s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0005s ]
+SQL: insert ignore into tag(tag_name) values('444') [ RunTime:0.0844s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('444')  [ RunTime:0.0005s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=69 ) [ RunTime:0.0004s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(69,64) [ RunTime:0.0658s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0034s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 64 [ RunTime:0.0171s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('64') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0101s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0009s ]
+SQL: UPDATE `cat` SET `art_num`='59' WHERE `cat_id` = 2 [ RunTime:0.0650s ]
+SQL: UPDATE `cat` SET `art_num`='2' WHERE `cat_id` = 3 [ RunTime:0.0320s ]
+SQL: UPDATE `cat` SET `art_num`='5' WHERE `cat_id` = 4 [ RunTime:0.0442s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001569s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001689s ]
+
+[ 2017-02-25T16:57:11+08:00 ] ::1 /Blog/index.php/Admin/Art/artList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0112s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 0,20   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001173s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001286s ]
+
+[ 2017-02-25T16:57:15+08:00 ] ::1 /Blog/index.php/Admin/Art/artEdit/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001277s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0117s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0099s ]
+SQL: SELECT `tag_name` FROM `relationship` left join tag on relationship.tag_id=tag.tag_id  WHERE ( art_id=69 )  [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`cat_id`,`small_img`,`content` FROM `art` WHERE ( art_id=69 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024157s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001240s ]
+
+[ 2017-02-25T16:59:14+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001572s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0113s ]
+SQL: UPDATE `art` SET `title`='fffffsssss啦啦啦',`cat_id`='2',`content`='    				<p>jjjj<br></p>    				    				    				' WHERE `art_id` = 69 [ RunTime:0.0524s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0133s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0037s ]
+SQL: insert ignore into tag(tag_name) values('555') [ RunTime:0.0782s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('555')  [ RunTime:0.0007s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=69 ) [ RunTime:0.0534s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(69,65) [ RunTime:0.0768s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0011s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 65 [ RunTime:0.0321s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('65') [ RunTime:0.0543s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0534s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0009s ]
+SQL: UPDATE `cat` SET `art_num`='59' WHERE `cat_id` = 2 [ RunTime:0.0672s ]
+SQL: UPDATE `cat` SET `art_num`='2' WHERE `cat_id` = 3 [ RunTime:0.0316s ]
+SQL: UPDATE `cat` SET `art_num`='5' WHERE `cat_id` = 4 [ RunTime:0.0451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002236s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002428s ]
+
+[ 2017-02-25T16:59:15+08:00 ] ::1 /Blog/index.php/Admin/Art/artList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001291s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0101s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 0,20   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000929s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001258s ]
+
+[ 2017-02-25T17:04:14+08:00 ] ::1 /Blog/index.php/Admin/Art/artList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001676s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0129s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001314s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001866s ]
+
+[ 2017-02-25T17:04:17+08:00 ] ::1 /Blog/index.php/Admin/Art/artEdit/art_id/68.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0112s ]
+SQL: SELECT `tag_name` FROM `relationship` left join tag on relationship.tag_id=tag.tag_id  WHERE ( art_id=68 )  [ RunTime:0.0007s ]
+NOTIC: [2] implode(): Invalid arguments passed D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 136 行.
+SQL: SELECT `art_id`,`title`,`cat_id`,`small_img`,`content` FROM `art` WHERE ( art_id=68 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001751s ]
+
+[ 2017-02-25T17:04:27+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/68.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001306s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0105s ]
+SQL: UPDATE `art` SET `title`='呵呵哈哈哈或',`cat_id`='4',`content`='    				<p>HHHH<br></p>    				    				    				    				    				    				    				' WHERE `art_id` = 68 [ RunTime:0.1054s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0108s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0006s ]
+SQL: insert ignore into tag(tag_name) values('22'),('55'),('99'),('e'),('js'),('php'),('亿') [ RunTime:0.0729s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('22','55','99','e','js','php','亿')  [ RunTime:0.0008s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=68 ) [ RunTime:0.0005s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(68,66),(68,67),(68,68),(68,69),(68,70),(68,71),(68,72) [ RunTime:0.0740s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0014s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 65 [ RunTime:0.0313s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.0319s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 67 [ RunTime:0.0336s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 68 [ RunTime:0.0207s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 69 [ RunTime:0.0336s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 70 [ RunTime:0.0216s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 71 [ RunTime:0.0354s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 72 [ RunTime:0.0295s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('65','66','67','68','69','70','71','72') [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0120s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0009s ]
+SQL: UPDATE `cat` SET `art_num`='59' WHERE `cat_id` = 2 [ RunTime:0.0405s ]
+SQL: UPDATE `cat` SET `art_num`='2' WHERE `cat_id` = 3 [ RunTime:0.0215s ]
+SQL: UPDATE `cat` SET `art_num`='5' WHERE `cat_id` = 4 [ RunTime:0.0220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001400s ]
+
+[ 2017-02-25T17:04:27+08:00 ] ::1 /Blog/index.php/Admin/Art/artList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001639s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0133s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 0,20   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001323s ]
+
+[ 2017-02-25T17:04:31+08:00 ] ::1 /Blog/index.php/Admin/Art/artEdit/art_id/67.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0107s ]
+SQL: SELECT `tag_name` FROM `relationship` left join tag on relationship.tag_id=tag.tag_id  WHERE ( art_id=67 )  [ RunTime:0.0007s ]
+NOTIC: [2] implode(): Invalid arguments passed D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 136 行.
+SQL: SELECT `art_id`,`title`,`cat_id`,`small_img`,`content` FROM `art` WHERE ( art_id=67 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000297s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000698s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002076s ]
+
+[ 2017-02-25T17:04:38+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/67.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001845s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0096s ]
+SQL: UPDATE `art` SET `title`='fffffsssss啦啦啦',`cat_id`='4',`content`='    				<p>啦啦啦啦斤斤计较军军军<br></p>    				<p><br></p>    				    				' WHERE `art_id` = 67 [ RunTime:0.0602s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0106s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0006s ]
+SQL: insert ignore into tag(tag_name) values('F') [ RunTime:0.0755s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('F')  [ RunTime:0.0006s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=67 ) [ RunTime:0.0004s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(67,73) [ RunTime:0.0613s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0009s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 65 [ RunTime:0.0200s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.0442s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 67 [ RunTime:0.0215s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 68 [ RunTime:0.0328s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 69 [ RunTime:0.0241s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 70 [ RunTime:0.0305s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 71 [ RunTime:0.0668s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 72 [ RunTime:0.0541s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0546s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('65','66','67','68','69','70','71','72','73') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0125s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0010s ]
+SQL: UPDATE `cat` SET `art_num`='59' WHERE `cat_id` = 2 [ RunTime:0.0513s ]
+SQL: UPDATE `cat` SET `art_num`='2' WHERE `cat_id` = 3 [ RunTime:0.0217s ]
+SQL: UPDATE `cat` SET `art_num`='5' WHERE `cat_id` = 4 [ RunTime:0.0215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001404s ]
+
+[ 2017-02-25T17:04:38+08:00 ] ::1 /Blog/index.php/Admin/Art/artList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0113s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 0,20   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000513s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001246s ]
+
+[ 2017-02-25T17:05:18+08:00 ] ::1 /Blog/index.php/Admin/Art/artEdit/art_id/65.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001636s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0146s ]
+SQL: SELECT `tag_name` FROM `relationship` left join tag on relationship.tag_id=tag.tag_id  WHERE ( art_id=65 )  [ RunTime:0.0007s ]
+NOTIC: [2] implode(): Invalid arguments passed D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 136 行.
+SQL: SELECT `art_id`,`title`,`cat_id`,`small_img`,`content` FROM `art` WHERE ( art_id=65 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000263s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000474s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001235s ]
+
+[ 2017-02-25T17:05:26+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/65.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001912s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0122s ]
+SQL: UPDATE `art` SET `title`='fffffsssssddddd',`cat_id`='2',`content`='    				<p>反反复复<br></p>    				' WHERE `art_id` = 65 [ RunTime:0.0658s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0096s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0006s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('22','55','99','e','js','php')  [ RunTime:0.0008s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=65 ) [ RunTime:0.0005s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(65,66),(65,67),(65,68),(65,69),(65,70),(65,71) [ RunTime:0.0654s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0024s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 65 [ RunTime:0.0792s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 66 [ RunTime:0.0878s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 67 [ RunTime:0.1233s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 68 [ RunTime:0.0754s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 69 [ RunTime:0.0435s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 70 [ RunTime:0.0444s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 71 [ RunTime:0.0546s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 72 [ RunTime:0.0666s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0433s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('65','66','67','68','69','70','71','72','73') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0177s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0009s ]
+SQL: UPDATE `cat` SET `art_num`='59' WHERE `cat_id` = 2 [ RunTime:0.0913s ]
+SQL: UPDATE `cat` SET `art_num`='2' WHERE `cat_id` = 3 [ RunTime:0.0310s ]
+SQL: UPDATE `cat` SET `art_num`='5' WHERE `cat_id` = 4 [ RunTime:0.0558s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002079s ]
+
+[ 2017-02-25T17:05:26+08:00 ] ::1 /Blog/index.php/Admin/Art/artList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002566s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0098s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001464s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001692s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001811s ]
+
+[ 2017-02-25T17:05:30+08:00 ] ::1 /Blog/index.php/Admin/Art/artEdit/art_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002790s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0114s ]
+SQL: SELECT `tag_name` FROM `relationship` left join tag on relationship.tag_id=tag.tag_id  WHERE ( art_id=66 )  [ RunTime:0.0009s ]
+NOTIC: [2] implode(): Invalid arguments passed D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 136 行.
+SQL: SELECT `art_id`,`title`,`cat_id`,`small_img`,`content` FROM `art` WHERE ( art_id=66 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001775s ]
+
+[ 2017-02-25T17:05:37+08:00 ] ::1 /Blog/index.php/Admin/Art/update/art_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000895s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001261s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0119s ]
+SQL: UPDATE `art` SET `title`='gggg',`cat_id`='2',`content`='    				<p>啛啛喳喳出错<br></p>    				' WHERE `art_id` = 66 [ RunTime:0.0499s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0114s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0007s ]
+SQL: insert ignore into tag(tag_name) values('444') [ RunTime:0.0832s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('444')  [ RunTime:0.0006s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=66 ) [ RunTime:0.0004s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(66,74) [ RunTime:0.1304s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0011s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 65 [ RunTime:0.0194s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 66 [ RunTime:0.0224s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 67 [ RunTime:0.0211s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 68 [ RunTime:0.0223s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 69 [ RunTime:0.0209s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 70 [ RunTime:0.0222s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 71 [ RunTime:0.0321s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 72 [ RunTime:0.0222s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0210s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 74 [ RunTime:0.0222s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('65','66','67','68','69','70','71','72','73','74') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0101s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0009s ]
+SQL: UPDATE `cat` SET `art_num`='59' WHERE `cat_id` = 2 [ RunTime:0.0417s ]
+SQL: UPDATE `cat` SET `art_num`='2' WHERE `cat_id` = 3 [ RunTime:0.0215s ]
+SQL: UPDATE `cat` SET `art_num`='5' WHERE `cat_id` = 4 [ RunTime:0.0331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001417s ]
+
+[ 2017-02-25T17:05:37+08:00 ] ::1 /Blog/index.php/Admin/Art/artList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0113s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 0,20   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028986s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001905s ]
+
+[ 2017-02-25T17:05:40+08:00 ] ::1 /Blog/index.php/Admin/Art/artEdit/art_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001738s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0107s ]
+SQL: SELECT `tag_name` FROM `relationship` left join tag on relationship.tag_id=tag.tag_id  WHERE ( art_id=66 )  [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`cat_id`,`small_img`,`content` FROM `art` WHERE ( art_id=66 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001259s ]
+
+[ 2017-02-25T17:05:56+08:00 ] ::1 /Blog/index.php/Admin/Art/artList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001809s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0178s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 0,20   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001779s ]
+
+[ 2017-02-25T17:06:10+08:00 ] ::1 /Blog/index.php/Admin/Art/artEdit/art_id/65.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0109s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0117s ]
+SQL: SELECT `tag_name` FROM `relationship` left join tag on relationship.tag_id=tag.tag_id  WHERE ( art_id=65 )  [ RunTime:0.0008s ]
+SQL: SELECT `art_id`,`title`,`cat_id`,`small_img`,`content` FROM `art` WHERE ( art_id=65 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001874s ]
+
+[ 2017-02-25T17:06:19+08:00 ] ::1 /Blog/index.php/Admin/Art/delete/art_id/65.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001540s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0124s ]
+SQL: DELETE FROM `art` WHERE ( art_id=65 ) [ RunTime:0.1185s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0372s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=65 ) [ RunTime:0.0930s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0097s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0010s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 65 [ RunTime:0.0520s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.0216s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 67 [ RunTime:0.0553s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 68 [ RunTime:0.0214s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 69 [ RunTime:0.0222s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 70 [ RunTime:0.1000s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 71 [ RunTime:0.0770s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 72 [ RunTime:0.0319s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0560s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 74 [ RunTime:0.0227s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('65','66','67','68','69','70','71','72','73','74') [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0093s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0009s ]
+SQL: UPDATE `cat` SET `art_num`='58' WHERE `cat_id` = 2 [ RunTime:0.0759s ]
+SQL: UPDATE `cat` SET `art_num`='2' WHERE `cat_id` = 3 [ RunTime:0.0308s ]
+SQL: UPDATE `cat` SET `art_num`='5' WHERE `cat_id` = 4 [ RunTime:0.0223s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001544s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001669s ]
+
+[ 2017-02-25T17:06:19+08:00 ] ::1 /Blog/index.php/Admin/Art/artList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001986s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0106s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000285s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000934s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001278s ]
+
+[ 2017-02-25T17:07:12+08:00 ] ::1 /Blog/index.php/Admin/Art/artEdit/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000972s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0109s ]
+SQL: SELECT `tag_name` FROM `relationship` left join tag on relationship.tag_id=tag.tag_id  WHERE ( art_id=69 )  [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`cat_id`,`small_img`,`content` FROM `art` WHERE ( art_id=69 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000780s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001255s ]
+
+[ 2017-02-25T17:07:17+08:00 ] ::1 /Blog/index.php/Admin/Art/delete/art_id/69.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000932s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0110s ]
+SQL: DELETE FROM `art` WHERE ( art_id=69 ) [ RunTime:0.0820s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0124s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=69 ) [ RunTime:0.0634s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0098s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0009s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.0449s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 67 [ RunTime:0.0293s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 68 [ RunTime:0.0329s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 69 [ RunTime:0.0328s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 70 [ RunTime:0.0329s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 71 [ RunTime:0.0444s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 72 [ RunTime:0.0210s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0446s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 74 [ RunTime:0.0211s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('66','67','68','69','70','71','72','73','74') [ RunTime:0.0334s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0560s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0010s ]
+SQL: UPDATE `cat` SET `art_num`='57' WHERE `cat_id` = 2 [ RunTime:0.0968s ]
+SQL: UPDATE `cat` SET `art_num`='2' WHERE `cat_id` = 3 [ RunTime:0.0667s ]
+SQL: UPDATE `cat` SET `art_num`='5' WHERE `cat_id` = 4 [ RunTime:0.0763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001424s ]
+
+[ 2017-02-25T17:07:17+08:00 ] ::1 /Blog/index.php/Admin/Art/artList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000961s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001849s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0463s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000224s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000465s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000707s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001245s ]
+
+[ 2017-02-25T17:17:24+08:00 ] ::1 /Blog/index.php/Admin/Cat/catlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001567s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001759s ]
+
+[ 2017-02-25T17:17:26+08:00 ] ::1 /Blog/index.php/Admin/Cat/catedit/cat_id/2/cat_name/JavaScript.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001928s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000752s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001313s ]
+
+[ 2017-02-25T17:29:12+08:00 ] ::1 /Blog/index.php/Admin/Cat/catedit/cat_id/2/cat_name/JavaScript.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001624s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001285s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001466s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002375s ]
+
+[ 2017-02-25T17:29:15+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000892s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+NOTIC: [8] Undefined variable: tag D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\TagController.class.php 第 8 行.
+
+[ 2017-02-25T17:29:45+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001706s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001729s ]
+
+[ 2017-02-25T17:33:24+08:00 ] ::1 /Blog/index.php/Admin/Cat/catAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001563s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001727s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003759s ]
+
+[ 2017-02-25T17:33:29+08:00 ] ::1 /Blog/index.php/Admin/Cat/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001779s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0122s ]
+SQL: INSERT INTO `cat` (`cat_name`) VALUES ('\'G') [ RunTime:0.0907s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001344s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001471s ]
+
+[ 2017-02-25T17:33:29+08:00 ] ::1 /Blog/index.php/Admin/Cat/catlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001439s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0357s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023196s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001309s ]
+
+[ 2017-02-25T17:38:03+08:00 ] ::1 /Blog/index.php/Admin/Cat/catlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001421s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001556s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000479s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029966s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003432s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003598s ]
+
+[ 2017-02-25T17:38:05+08:00 ] ::1 /Blog/index.php/Admin/Cat/catedit/cat_id/2/cat_name/JavaScript.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000734s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001264s ]
+
+[ 2017-02-25T17:38:11+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003100s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001276s ]
+
+[ 2017-02-25T17:38:13+08:00 ] ::1 /Blog/index.php/Admin/Tag/%7B:U('Admin/Cat/tagEdit?tag_id=$vo['tag_id']
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000424s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001174s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001320s ]
+ERR: 非法操作:{:U('Admin
+
+[ 2017-02-25T17:39:35+08:00 ] ::1 /Blog/index.php/Admin/Tag/%7B:U('Admin/Cat/tagEdit?tag_id=$vo['tag_id']
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001258s ]
+ERR: 非法操作:{:U('Admin
+
+[ 2017-02-25T17:39:48+08:00 ] ::1 /Blog/index.php/Admin/Tag/%7B:U('Admin/Cat/tagEdit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001383s ]
+ERR: 非法操作:{:U('Admin
+
+[ 2017-02-25T17:39:59+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001945s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024324s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024468s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001417s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001842s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001967s ]
+
+[ 2017-02-25T17:40:01+08:00 ] ::1 /Blog/index.php/Admin/Tag/%7B:U('Admin/Cat/tagEdit?tag_id=$vo['tag_id']
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001773s ]
+ERR: 非法操作:{:U('Admin
+
+[ 2017-02-25T17:41:38+08:00 ] ::1 /Blog/index.php/Admin/Art/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002191s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002363s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0099s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 0,20   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001787s ]
+
+[ 2017-02-25T17:41:41+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003454s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003619s ]
+
+[ 2017-02-25T17:41:45+08:00 ] ::1 /Blog/index.php/Admin/Cat/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+ERR: 非法操作:tagEdit
+
+[ 2017-02-25T17:42:11+08:00 ] ::1 /Blog/index.php/Admin/Cat/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002318s ]
+ERR: 非法操作:tagEdit
+
+[ 2017-02-25T17:42:13+08:00 ] ::1 /Blog/index.php/Admin/Cat/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003137s ]
+ERR: 非法操作:tagEdit
+
+[ 2017-02-25T17:42:21+08:00 ] ::1 /Blog/index.php/Admin/Art/artList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001823s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002982s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0102s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 0,20   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000216s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000413s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001947s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002114s ]
+
+[ 2017-02-25T17:42:23+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002321s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027539s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001129s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001788s ]
+
+[ 2017-02-25T17:42:25+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002253s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0115s ]
+SQL: SELECT `tag_name` FROM `tag` LIMIT 1   [ RunTime:0.1024s ]
+NOTIC: [8] Undefined offset: 0 D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\TagController.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+
+[ 2017-02-25T17:44:42+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001894s ]
+
+[ 2017-02-25T17:45:30+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001012s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001765s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0123s ]
+SQL: SELECT `tag_name` FROM `tag` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\TagController.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022892s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001507s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002215s ]
+
+[ 2017-02-25T17:45:37+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003956s ]
+
+[ 2017-02-25T17:45:39+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002610s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0122s ]
+SQL: SELECT `tag_name` FROM `tag` LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\TagController.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002758s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002120s ]
+
+[ 2017-02-25T17:47:14+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001886s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0139s ]
+SQL: SELECT `tag_name` FROM `tag` WHERE ( tag_id=66 ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 0 D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\TagController.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001828s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006089s ]
+
+[ 2017-02-25T17:47:20+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002731s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000475s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029408s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001801s ]
+
+[ 2017-02-25T17:47:22+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001760s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0123s ]
+SQL: SELECT `tag_name` FROM `tag` WHERE ( tag_id=66 ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\TagController.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021743s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001628s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002145s ]
+
+[ 2017-02-25T17:47:56+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001820s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0147s ]
+SQL: SELECT `tag_name` FROM `tag` WHERE ( tag_id=66 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Array to string conversion D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\35e50360de8be74c9d04199f0821ebbb.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001818s ]
+
+[ 2017-02-25T17:48:18+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001695s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001834s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0143s ]
+SQL: SELECT `tag_name` FROM `tag` WHERE ( tag_id=66 ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined offset: 0 D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\TagController.class.php 第 18 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002041s ]
+
+[ 2017-02-25T17:49:56+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001808s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0146s ]
+SQL: SELECT `tag_name` FROM `tag` WHERE ( tag_id=66 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000422s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032811s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001960s ]
+
+[ 2017-02-25T17:55:34+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001016s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001927s ]
+
+[ 2017-02-25T17:55:57+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001806s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0138s ]
+SQL: SELECT `tag_name` FROM `tag` WHERE ( tag_id=66 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028447s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001882s ]
+
+[ 2017-02-25T17:55:59+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002858s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000410s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028233s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001788s ]
+
+[ 2017-02-25T17:56:01+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000993s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001893s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0113s ]
+SQL: SELECT `tag_name` FROM `tag` WHERE ( tag_id=66 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001814s ]
+
+[ 2017-02-25T17:56:08+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002437s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002582s ]
+
+[ 2017-02-25T17:56:08+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/$url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002278s ]
+
+[ 2017-02-25T17:56:08+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/$url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000994s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001879s ]
+
+[ 2017-02-25T17:56:08+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/$url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001746s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002604s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002789s ]
+
+[ 2017-02-25T17:56:08+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/$url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001783s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001844s ]
+
+[ 2017-02-25T17:56:09+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/$url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001861s ]
+
+[ 2017-02-25T17:56:09+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/$url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002801s ]
+
+[ 2017-02-25T17:56:09+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/$url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002830s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001773s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001825s ]
+
+[ 2017-02-25T17:56:09+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/$url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001870s ]
+
+[ 2017-02-25T17:56:09+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/$url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-02-25T17:56:09+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/$url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001838s ]
+
+[ 2017-02-25T17:56:41+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003937s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004182s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024553s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024706s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001350s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001463s ]
+
+[ 2017-02-25T17:56:44+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0114s ]
+SQL: SELECT `tag_name` FROM `tag` WHERE ( tag_id=66 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001304s ]
+
+[ 2017-02-25T17:56:48+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001629s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001814s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2017-02-25T17:56:48+08:00 ] ::1 /Blog/index.php/Admin/Tag/taglist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001646s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037495s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001730s ]
+
+[ 2017-02-25T17:57:04+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0117s ]
+SQL: SELECT `tag_name` FROM `tag` WHERE ( tag_id=66 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019414s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001182s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001296s ]
+
+[ 2017-02-25T17:57:09+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001924s ]
+
+[ 2017-02-25T17:57:09+08:00 ] ::1 /Blog/index.php/Admin/Tag/taglist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001255s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001235s ]
+
+[ 2017-02-25T17:59:05+08:00 ] ::1 /Blog/index.php/Admin/Tag/taglist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001875s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0154s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002675s ]
+
+[ 2017-02-25T17:59:06+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0119s ]
+SQL: SELECT `tag_name` FROM `tag` WHERE ( tag_id=66 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001264s ]
+
+[ 2017-02-25T17:59:11+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001452s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001964s ]
+
+[ 2017-02-25T17:59:11+08:00 ] ::1 /Blog/index.php/Admin/Tag/taglist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001275s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022042s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001463s ]
+
+[ 2017-02-25T18:00:17+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001276s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0167s ]
+SQL: SELECT `tag_name` FROM `tag` WHERE ( tag_id=66 ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000256s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000830s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001271s ]
+
+[ 2017-02-25T18:01:40+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagEdit/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001619s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0144s ]
+SQL: SELECT `tag_name` FROM `tag` WHERE ( tag_id=66 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000268s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000584s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026343s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001721s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002506s ]
+
+[ 2017-02-25T18:01:45+08:00 ] ::1 /Blog/index.php/Admin/Tag/update/tag_id/66.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001318s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0103s ]
+SQL: UPDATE `tag` SET `tag_name`='33' WHERE `tag_id` = 66 [ RunTime:0.0645s ]
+
+[ 2017-02-25T18:01:45+08:00 ] ::1 /Blog/index.php/Admin/Tag/taglist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001502s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2017-02-25T18:02:16+08:00 ] ::1 /Blog/index.php/Admin/Cat/catlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023167s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001265s ]
+
+[ 2017-02-25T18:02:21+08:00 ] ::1 /Blog/index.php/Admin/Cat/delete/cat_id/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000878s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001683s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0112s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` WHERE ( cat_id=4 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2017-02-25T18:02:24+08:00 ] ::1 /Blog/index.php/Admin/Cat/catlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001905s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022421s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000822s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001136s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001248s ]
+
+[ 2017-02-25T18:02:30+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001804s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001772s ]
+
+[ 2017-02-25T18:02:43+08:00 ] ::1 /Blog/index.php/Admin/Art/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0120s ]
+SQL: INSERT INTO `art` (`title`,`cat_id`,`content`,`pubtime`) VALUES ('fffffffggggg','5','    				<p>kkk<br></p>','2017-02-25 18:02:41') [ RunTime:0.0906s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0111s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0006s ]
+SQL: insert ignore into tag(tag_name) values('22') [ RunTime:0.1020s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('22','55','99','e','js','php','亿')  [ RunTime:0.0011s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=70 ) [ RunTime:0.0005s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(70,75),(70,67),(70,68),(70,69),(70,70),(70,71),(70,72) [ RunTime:0.1640s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0013s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.1304s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 67 [ RunTime:0.0768s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 68 [ RunTime:0.0440s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 69 [ RunTime:0.0630s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 70 [ RunTime:0.1020s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 71 [ RunTime:0.0891s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 72 [ RunTime:0.0763s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0882s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 74 [ RunTime:0.1131s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 75 [ RunTime:0.0596s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('66','67','68','69','70','71','72','73','74','75') [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0111s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0011s ]
+SQL: UPDATE `cat` SET `art_num`='57' WHERE `cat_id` = 2 [ RunTime:0.0891s ]
+SQL: UPDATE `cat` SET `art_num`='2' WHERE `cat_id` = 3 [ RunTime:0.0852s ]
+SQL: UPDATE `cat` SET `art_num`='5' WHERE `cat_id` = 4 [ RunTime:0.0659s ]
+SQL: UPDATE `cat` SET `art_num`='1' WHERE `cat_id` = 5 [ RunTime:0.1373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001976s ]
+
+[ 2017-02-25T18:02:43+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001945s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026286s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001245s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001776s ]
+
+[ 2017-02-25T18:02:48+08:00 ] ::1 /Blog/index.php/Admin/Cat/catlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002332s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 47 行.
+NOTIC: [8] Use of undefined constant cat_id - assumed 'cat_id' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+NOTIC: [8] Use of undefined constant cat_name - assumed 'cat_name' D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Admin\8505899e8242d58022a2c24f700df1a6.php 第 48 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027276s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027446s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001331s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002685s ]
+
+[ 2017-02-25T18:02:53+08:00 ] ::1 /Blog/index.php/Admin/Tag/tagList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001913s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000406s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022165s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001130s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001239s ]
+

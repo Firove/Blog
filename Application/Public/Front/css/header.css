@@ -1,0 +1,24 @@
+.jumbotron{
+	height: 280px;
+	background-image: url("../img/1.jpg");
+	background-size: 100% 100%;
+	overflow: hidden;
+	background-repeat: none;
+	margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) {
+	.jumbotron{
+		height: 550px;
+	}	
+}
+@media only screen and (min-width: 992px) {
+	.jumbotron{
+		height: 700px;
+	}
+	
+}
+@media only screen and (min-width: 1200px) {
+	.jumbotron{
+		height: 700px;
+	}
+}

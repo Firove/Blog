@@ -1,0 +1,41 @@
+	<!--<header role="banner">-->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs_navbar">
+					<span class="sr-only">唉</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<span  class="navbar-brand">梅子黄时雨</span>
+			</div>
+			<div class="collapse navbar-collapse navbar-responsive-collapse" id="bs_navbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="{:U('Front/First/firstPage')}">首页</a></li>
+					<!--每次传入一个$nav_id来判断导航应该在的位置-->
+					<!--<if condition="$nav_id eq 0">
+						<li class="active"><a href="{:U('Front/First/firstPage')}">首页</a></li>
+						<else/>
+						<li><a href="{:U('Front/First/firstPage')}">首页</a></li>
+					</if>
+					
+					<if condition="$nav_id eq 1">
+						<li class="active"><a href="#"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>&nbsp;博客分类</a></li>
+					<else/>
+						<li><a href="#"><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>&nbsp;博客分类</a></li>
+					</if>
+					
+					<if condition="$nav_id eq 2">
+						<li class="active"><a href="#"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>全部标签</a></li>
+					<else/>
+						<li><a href="#"><span class="glyphicon glyphicon-tag" aria-hidden="true"></span>&nbsp;全部标签</a></li>
+					</if>-->
+					
+					<li><a href="{:U('Front/Login/login')}"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>&nbsp;管理</a></li>
+				</ul>
+			</div>			
+		</div>		
+	</nav>	
+<!--</header>-->

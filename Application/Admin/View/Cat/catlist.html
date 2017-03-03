@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>栏目列表</title>
+		<load file="__PUBLIC__/Admin/css/common.css" />
+		<load file="__PUBLIC__/Admin/css/catlist.css" />
+		
+	</head>
+	<body>
+		<include file="./Application/Admin/View/Public/top.html" />
+		
+		<div id="content">
+			<include file="./Application/Admin/View/Public/left.html" />
+            <div id='right'>
+            	<table border="1px" cellspacing="0" cellpadding="0">
+            		<tr><th style="width: 400px;">栏目名称</th><th style="width: 80px;">文章数</th><th style="width: 120px;">操作</th></tr>
+            		<volist name="cats" id="vo">
+            		<tr><td>{$vo.cat_name}</td><td>{$vo.art_num}</td><td><a href="{:U('Admin/Cat/delete?cat_id='.$vo[cat_id])}">删除</a>&nbsp;|&nbsp;
+            			<a href="{:U('Admin/Cat/catedit?cat_id='.$vo[cat_id].'&cat_name='.$vo[cat_name])}">修改</a></td></tr>		
+            		</volist>
+            	</table>
+
+			</div>
+		</div>
+		
+
+		
+	</body>
+</html>

@@ -1,0 +1,60 @@
+mysql -h localhost -u root -p
+create database blog;
+use myblog;
+set names gbk;
+
+//栏目列表
+create table cat(
+cat_id tinyint unsigned primary key auto_increment,
+cat_name varchar(32) not null,
+art_num int unsigned not null default 0);
+
+
+insert into cat(cat_name) values('生活');
+
+select * from cat;
+
+//文章表
+create table art(
+art_id int unsigned primary key auto_increment,
+cat_id tinyint unsigned not null,
+title varchar(128) not null,
+small_img varchar(128) null,
+content text not null,
+pubtime datetime not null,
+);
+
+insert into art(cat_id,user_id,title,content,pubtime,comm) values(6,2,'你是不是傻','我不傻',now(),0);
+//标签表
+create table tag(
+tag_id int unsigned primary key auto_increment,
+tag_name varchar(16) not null unique,
+art_num int unsigned not null default 0
+);
+
+//标签文章关系对应表
+create table relationship(
+art_id int unsigned not null,
+tag_id int unsigned not null
+);
+
+//评论表
+create table comment(
+comment_id int unsigned primary key auto_increment,
+art_id int unsigned not null,
+nick varchar(16) not null,
+pubtime datetime not null,
+content varchar(512) not null
+);
+
+//留言表
+create table liuyan(
+liuyan_id int unsigned primary key auto_increment,
+nick varchar(16) not null,
+pubtime datetime not null,
+content varchar(512) not null
+);
+
+insert into liuyan(nick,pubtime,content) values('张三',now(),'你是不是傻');
+
+update art set small_img='http://www.firove.cn/Blog/upload/toutu1.jpg' where art_id=1;

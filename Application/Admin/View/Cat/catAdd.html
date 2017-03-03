@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>栏目列表</title>
+		<load file="__PUBLIC__/Admin/css/common.css" />
+		<load file="__PUBLIC__/Admin/css/catedit.css" />
+	</head>
+	<body>
+		<include file="./Application/Admin/View/Public/top.html" />
+		<div id="content">
+			<include file="./Application/Admin/View/Public/left.html" />
+            <div id='right'>
+            	<form action="{:U('Admin/Cat/add')}" method="post">
+            		栏目名称：<input class="txt" name="cat_name" type="text"/>&nbsp;&nbsp;
+            		<input class="btn" type="submit" value="添加"/>
+            	</form>
+			</div>
+		</div>		
+	</body>
+</html>

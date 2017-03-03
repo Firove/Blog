@@ -1,0 +1,14 @@
+<div class="panel panel-default fntcol">
+	<div class="panel-body">
+		<span class="glyphicon glyphicon-tag" aria-hidden="true"></span>&nbsp;&nbsp;<b>所有标签</b>
+	<hr style="color: black;"/>
+		<volist name="tg" id="vo">
+			<a class="biaoqian" href="{:U('Front/First/firstPage?tag_id='.$vo['tag_id'].'&cz=1')}">
+				{$vo.tag_name}({$vo.art_num})
+			</a>
+									
+		</volist>
+								
+	</div>
+							
+</div>

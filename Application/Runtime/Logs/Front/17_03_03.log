@@ -1,0 +1,1682 @@
+[ 2017-03-03T11:01:04+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001859s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0377s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0269s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0147s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0906s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000405s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001704s ]
+
+[ 2017-03-03T11:01:04+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001412s ]
+
+[ 2017-03-03T11:01:04+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002506s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:01:04+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016808s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:02:33+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003316s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0093s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0103s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059302s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059448s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001586s ]
+
+[ 2017-03-03T11:02:33+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001848s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:02:33+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001820s ]
+
+[ 2017-03-03T11:02:33+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002412s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:03:26+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001007s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001961s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0138s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0113s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000382s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002028s ]
+
+[ 2017-03-03T11:03:26+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002659s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:03:26+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002382s ]
+
+[ 2017-03-03T11:03:26+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002700s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:03:28+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002016s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0365s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0100s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0115s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000353s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000519s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000937s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001423s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001548s ]
+
+[ 2017-03-03T11:03:29+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002013s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:03:29+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001665s ]
+
+[ 2017-03-03T11:03:29+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002820s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:04:23+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001573s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0101s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0130s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002059s ]
+
+[ 2017-03-03T11:04:23+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002272s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:04:23+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001908s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:04:23+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001304s ]
+
+[ 2017-03-03T11:04:39+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000919s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001891s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0098s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0120s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0104s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000372s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000747s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000887s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001959s ]
+
+[ 2017-03-03T11:04:39+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001375s ]
+
+[ 2017-03-03T11:04:39+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002190s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002412s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:04:39+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001306s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001974s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:04:59+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001287s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0124s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0108s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0114s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0775s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001915s ]
+
+[ 2017-03-03T11:04:59+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002436s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:04:59+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001324s ]
+
+[ 2017-03-03T11:04:59+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001386s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001947s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:05:16+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001505s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0099s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0092s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000369s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037653s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001601s ]
+
+[ 2017-03-03T11:05:16+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001883s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:05:16+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001937s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:05:16+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001481s ]
+
+[ 2017-03-03T11:06:25+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003356s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0121s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0111s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000368s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001422s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001548s ]
+
+[ 2017-03-03T11:06:25+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001404s ]
+
+[ 2017-03-03T11:06:25+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003346s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:06:25+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.012181s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004519s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:06:44+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001586s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002142s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0116s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0107s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000490s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000768s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000836s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000939s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002195s ]
+
+[ 2017-03-03T11:06:44+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001435s ]
+
+[ 2017-03-03T11:06:44+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002363s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:06:44+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002601s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:06:47+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001972s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0115s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0571s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0586s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000236s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034323s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001480s ]
+
+[ 2017-03-03T11:06:47+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001309s ]
+
+[ 2017-03-03T11:06:47+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002808s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:06:47+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002483s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:07:01+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001013s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0098s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0115s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038028s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003049s ]
+
+[ 2017-03-03T11:07:01+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001530s ]
+
+[ 2017-03-03T11:07:01+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001851s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:07:01+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006944s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:08:16+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001995s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0176s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0154s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0012s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000383s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000815s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001748s ]
+
+[ 2017-03-03T11:08:17+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002041s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:08:17+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002570s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:08:17+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001325s ]
+
+[ 2017-03-03T11:09:11+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002236s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0122s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0118s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000377s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000603s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002257s ]
+
+[ 2017-03-03T11:09:11+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002374s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:09:11+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001370s ]
+
+[ 2017-03-03T11:09:11+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003032s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:09:14+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001542s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0130s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0130s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0015s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000395s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000616s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046486s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001013s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001911s ]
+
+[ 2017-03-03T11:09:14+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001903s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:09:14+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002117s ]
+
+[ 2017-03-03T11:09:14+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001934s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002521s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:10:08+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001848s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0112s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0113s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0114s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000918s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001854s ]
+
+[ 2017-03-03T11:10:08+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001299s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003289s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:10:08+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002015s ]
+
+[ 2017-03-03T11:10:08+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014852s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002895s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:10:26+08:00 ] ::1 /Blog/index.php/Front/Art/artPage/art_id/84.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001531s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0110s ]
+SQL: SELECT MAX(art_id) AS tp_max FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT MIN(art_id) AS tp_min FROM `art` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  WHERE ( art_id=84 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0101s ]
+SQL: SELECT relationship.tag_id,`tag_name` FROM `relationship` left join tag on relationship.tag_id=tag.tag_id  WHERE ( art_id=84 )  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000326s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000546s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\67e60f6abd5445fd9f51180c370942e4.php 第 30 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\67e60f6abd5445fd9f51180c370942e4.php 第 34 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\67e60f6abd5445fd9f51180c370942e4.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001912s ]
+
+[ 2017-03-03T11:10:37+08:00 ] ::1 /Blog/index.php/Front/First/firstPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000880s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001337s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0110s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0138s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000460s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000846s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035688s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000834s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002617s ]
+
+[ 2017-03-03T11:10:37+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002124s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:10:37+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001323s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002591s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:10:37+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003896s ]
+
+[ 2017-03-03T11:11:52+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001629s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0137s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0111s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000374s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000575s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003724s ]
+
+[ 2017-03-03T11:11:52+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002759s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:11:52+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000329s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004444s ]
+
+[ 2017-03-03T11:11:52+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003674s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:12:06+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002261s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0116s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0117s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0113s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0091s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000362s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000573s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004008s ]
+
+[ 2017-03-03T11:12:07+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001458s ]
+
+[ 2017-03-03T11:12:07+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002507s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:12:07+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018893s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:15:37+08:00 ] ::1 /Blog/index.php/Front/First/firstPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001789s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0149s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0121s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0181s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000371s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000582s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001415s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002350s ]
+
+[ 2017-03-03T11:15:37+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003366s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:15:37+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002960s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:15:37+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001614s ]
+
+[ 2017-03-03T11:16:39+08:00 ] ::1 /Blog/index.php/Front/First/firstPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001376s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0109s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0116s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001205s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001390s ]
+
+[ 2017-03-03T11:16:39+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002089s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:16:39+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004801s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:16:39+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002536s ]
+
+[ 2017-03-03T11:17:03+08:00 ] ::1 /Blog/index.php/Front/First/firstPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001229s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001378s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0117s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0111s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000242s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034316s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001730s ]
+
+[ 2017-03-03T11:17:04+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002047s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:17:04+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001363s ]
+
+[ 2017-03-03T11:17:04+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001926s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:31:28+08:00 ] ::1 /Blog/index.php/Front/First/firstPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001716s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0158s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0146s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0124s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000385s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002157s ]
+
+[ 2017-03-03T11:31:30+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002732s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:31:30+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002737s ]
+
+[ 2017-03-03T11:31:30+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000111s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002987s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:32:24+08:00 ] ::1 /Blog/index.php/Front/First/firstPage.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000903s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0145s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.2855s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0147s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037997s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001008s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001950s ]
+
+[ 2017-03-03T11:32:24+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.034149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034431s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:32:24+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.026870s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002251s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T11:32:24+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004469s ]
+
+[ 2017-03-03T12:11:01+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003392s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0137s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0131s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0131s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0698s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000316s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000482s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002908s ]
+
+[ 2017-03-03T12:11:01+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007960s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T12:11:01+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001605s ]
+
+[ 2017-03-03T12:11:01+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001568s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.019750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020020s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T12:13:53+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002253s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0109s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0128s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0103s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000368s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000570s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056788s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003655s ]
+
+[ 2017-03-03T12:13:53+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001568s ]
+
+[ 2017-03-03T12:13:53+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003007s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T12:13:53+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003592s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T12:19:16+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001542s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0136s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0118s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0103s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0109s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000459s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000674s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002169s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002353s ]
+
+[ 2017-03-03T12:19:17+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002459s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T12:19:17+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001992s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T12:19:17+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002086s ]
+
+[ 2017-03-03T12:19:27+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000874s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003176s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0108s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0131s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002088s ]
+
+[ 2017-03-03T12:19:27+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001374s ]
+
+[ 2017-03-03T12:19:27+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001298s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001942s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T12:19:27+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003194s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T12:23:34+08:00 ] ::1 /Blog/index.php/Front/First/firstPage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001626s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0103s ]
+NOTIC: [2048] Declaration of Front\Model\RelationshipModel::select() should be compatible with Think\Model::select($options = Array) D:\app\XAMPP\install\htdocs\Blog\Application\Front\Model\RelationshipModel.class.php 第 12 行.
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0104s ]
+SQL: select art_id,GROUP_CONCAT(tag_name) as tag_str from relationship left join tag on relationship.tag_id=tag.tag_id group by art_id [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0107s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  ORDER BY art_id desc LIMIT 0,8   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `tag`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000521s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000852s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 32 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 36 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\50de338b09f57869f03413bebc2d28f5.php 第 40 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001933s ]
+
+[ 2017-03-03T12:23:34+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488109093jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002754s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T12:23:34+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488107939.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001754s ]
+
+[ 2017-03-03T12:23:34+08:00 ] ::1 /Blog/index.php/Front/First/Blog/upload/toutu1488108862jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002515s ]
+ERR: 非法操作:Blog
+
+[ 2017-03-03T12:23:52+08:00 ] ::1 /Blog/index.php/Front/Art/artPage/art_id/83.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0117s ]
+SQL: SELECT MAX(art_id) AS tp_max FROM `art` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT MIN(art_id) AS tp_min FROM `art` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `art_id`,`title`,`pubtime`,`content`,`small_img`,`cat_name` FROM `art` left join cat on art.cat_id=cat.cat_id  WHERE ( art_id=83 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0097s ]
+SQL: SELECT relationship.tag_id,`tag_name` FROM `relationship` left join tag on relationship.tag_id=tag.tag_id  WHERE ( art_id=83 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000192s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\67e60f6abd5445fd9f51180c370942e4.php 第 30 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\67e60f6abd5445fd9f51180c370942e4.php 第 34 行.
+NOTIC: [8] Undefined variable: nav_id D:\app\XAMPP\install\htdocs\Blog\Application\Runtime\Cache\Front\67e60f6abd5445fd9f51180c370942e4.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002123s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002372s ]
+

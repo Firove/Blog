@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>栏目列表</title>
+		<load file="__PUBLIC__/Admin/css/common.css" />
+		<load file="__PUBLIC__/Admin/css/catedit.css" />
+	</head>
+	<body>
+		<include file="./Application/Admin/View/Public/top.html" />
+		<div id="content">
+			<include file="./Application/Admin/View/Public/left.html" />
+            <div id='right'>
+            	<form action="{:U('Admin/Tag/update?tag_id='.$tag_id)}" method="post">
+            		标签名称：<input class="txt" name="tag_name" type="text" value="{$tag_name}"/>&nbsp;&nbsp;
+            		<input class="btn" type="submit" value="修改"/>
+            	</form>
+			</div>
+		</div>		
+	</body>
+</html>

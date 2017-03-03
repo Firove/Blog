@@ -1,0 +1,1036 @@
+[ 2017-02-26T17:36:02+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004682s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.090401s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002462s ]
+
+[ 2017-02-26T17:36:45+08:00 ] ::1 /Blog/index.php/Admin/Art/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005713s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0139s ]
+SQL: INSERT INTO `art` (`title`,`cat_id`,`content`,`pubtime`) VALUES ('hehehehheheehehhehehe','4','    				<p>GGGG<br></p>','2017-02-26 17:36:45') [ RunTime:0.3316s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0249s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0010s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''G'')' at line 1
+ [ SQL语句 ] : insert ignore into tag(tag_name) values('G'')
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''G'')' at line 1
+ [ SQL语句 ] : insert ignore into tag(tag_name) values('G'')
+
+[ 2017-02-26T17:37:41+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002181s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002551s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000552s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001100s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001958s ]
+
+[ 2017-02-26T18:13:59+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002133s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035094s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001320s ]
+
+[ 2017-02-26T18:15:16+08:00 ] ::1 /Blog/index.php/Admin/Art/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002088s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0242s ]
+SQL: INSERT INTO `art` (`title`,`cat_id`,`small_img`,`content`,`pubtime`) VALUES ('你是不是傻','2','D:/app/XAMPP/install/htdocs/Blog/upload/toutu1488104114.jpg','    				<p>谁的青春不迷茫<br></p>','2017-02-26 18:15:14') [ RunTime:0.0627s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0227s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0196s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0012s ]
+SQL: insert ignore into tag(tag_name) values('mysql') [ RunTime:0.0608s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('mysql')  [ RunTime:0.0191s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=72 ) [ RunTime:0.0461s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(72,76) [ RunTime:0.0482s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0174s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.1468s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 67 [ RunTime:0.0371s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 68 [ RunTime:0.0773s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 69 [ RunTime:0.1038s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 70 [ RunTime:0.0739s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 71 [ RunTime:0.0710s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 72 [ RunTime:0.0595s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0766s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 74 [ RunTime:0.0443s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 75 [ RunTime:0.0458s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 76 [ RunTime:0.0300s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('66','67','68','69','70','71','72','73','74','75','76') [ RunTime:0.0519s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0153s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0013s ]
+SQL: UPDATE `cat` SET `art_num`='58' WHERE `cat_id` = 2 [ RunTime:0.1476s ]
+SQL: UPDATE `cat` SET `art_num`='2' WHERE `cat_id` = 3 [ RunTime:0.0590s ]
+SQL: UPDATE `cat` SET `art_num`='6' WHERE `cat_id` = 4 [ RunTime:0.0702s ]
+SQL: UPDATE `cat` SET `art_num`='1' WHERE `cat_id` = 5 [ RunTime:0.0503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002323s ]
+
+[ 2017-02-26T18:15:16+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002073s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0161s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037419s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002162s ]
+
+[ 2017-02-26T18:38:37+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000482s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001577s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002554s ]
+
+[ 2017-02-26T18:39:12+08:00 ] ::1 /Blog/index.php/Admin/Art/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002165s ]
+NOTIC: [2] move_uploaded_file(http://localhost:8000/Blog/upload/toutu1488105552.jpg): failed to open stream: HTTP wrapper does not support writeable connections D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 51 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'D:\app\XAMPP\install\tmp\phpA834.tmp' to 'http://localhost:8000/Blog/upload/toutu1488105552.jpg' D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0201s ]
+SQL: INSERT INTO `art` (`title`,`cat_id`,`small_img`,`content`,`pubtime`) VALUES ('你是不是傻呀','4','http://localhost:8000/Blog/upload/toutu1488105552.jpg','    				<p>shibushisha<br></p>','2017-02-26 18:39:12') [ RunTime:0.0642s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0152s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0007s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('mysql')  [ RunTime:0.0005s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=73 ) [ RunTime:0.0005s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(73,76) [ RunTime:0.0587s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0015s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.0516s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 67 [ RunTime:0.0212s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 68 [ RunTime:0.0846s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 69 [ RunTime:0.0581s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 70 [ RunTime:0.0665s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 71 [ RunTime:0.0213s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 72 [ RunTime:0.0440s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0216s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 74 [ RunTime:0.0215s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 75 [ RunTime:0.0213s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 76 [ RunTime:0.0443s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('66','67','68','69','70','71','72','73','74','75','76') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0162s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0025s ]
+SQL: UPDATE `cat` SET `art_num`='58' WHERE `cat_id` = 2 [ RunTime:0.0565s ]
+SQL: UPDATE `cat` SET `art_num`='2' WHERE `cat_id` = 3 [ RunTime:0.0237s ]
+SQL: UPDATE `cat` SET `art_num`='7' WHERE `cat_id` = 4 [ RunTime:0.0183s ]
+SQL: UPDATE `cat` SET `art_num`='1' WHERE `cat_id` = 5 [ RunTime:0.0225s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001600s ]
+
+[ 2017-02-26T18:39:13+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001968s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000306s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000530s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001482s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002623s ]
+
+[ 2017-02-26T18:48:54+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002169s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002340s ]
+
+[ 2017-02-26T18:49:21+08:00 ] ::1 /Blog/index.php/Admin/Art/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001793s ]
+NOTIC: [2] move_uploaded_file(file:///http://localhost:8000/Blog/upload/toutu1488106160.jpg): failed to open stream: Invalid argument D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 51 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'D:\app\XAMPP\install\tmp\phpF291.tmp' to 'file:///http://localhost:8000/Blog/upload/toutu1488106160.jpg' D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0109s ]
+SQL: INSERT INTO `art` (`title`,`cat_id`,`small_img`,`content`,`pubtime`) VALUES ('你是不是傻啊','2','file:///http://localhost:8000/Blog/upload/toutu1488106160.jpg','    				<p>ggggg<br></p>','2017-02-26 18:49:20') [ RunTime:0.0500s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0167s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0008s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('mysql')  [ RunTime:0.0007s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=74 ) [ RunTime:0.0007s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(74,76) [ RunTime:0.0614s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0156s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.0946s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 67 [ RunTime:0.0881s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 68 [ RunTime:0.0660s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 69 [ RunTime:0.0769s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 70 [ RunTime:0.0443s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 71 [ RunTime:0.0215s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 72 [ RunTime:0.0221s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0547s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 74 [ RunTime:0.0243s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 75 [ RunTime:0.0297s ]
+SQL: UPDATE `tag` SET `art_num`='3' WHERE `tag_id` = 76 [ RunTime:0.0217s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('66','67','68','69','70','71','72','73','74','75','76') [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0148s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0011s ]
+SQL: UPDATE `cat` SET `art_num`='59' WHERE `cat_id` = 2 [ RunTime:0.0809s ]
+SQL: UPDATE `cat` SET `art_num`='2' WHERE `cat_id` = 3 [ RunTime:0.0665s ]
+SQL: UPDATE `cat` SET `art_num`='7' WHERE `cat_id` = 4 [ RunTime:0.0547s ]
+SQL: UPDATE `cat` SET `art_num`='1' WHERE `cat_id` = 5 [ RunTime:0.0439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002447s ]
+
+[ 2017-02-26T18:49:22+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001599s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000252s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001364s ]
+
+[ 2017-02-26T18:51:01+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002017s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0124s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001803s ]
+
+[ 2017-02-26T18:51:33+08:00 ] ::1 /Blog/index.php/Admin/Art/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004624s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0115s ]
+SQL: INSERT INTO `art` (`title`,`cat_id`,`small_img`,`content`,`pubtime`) VALUES ('你是不是傻啊','3','file:///D:/app/XAMPP/install/htdocs/Blog/upload/toutu1488106292.jpg','    				<p>kkkkk<br></p>','2017-02-26 18:51:32') [ RunTime:0.0619s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0123s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0007s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('mysql')  [ RunTime:0.0006s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=75 ) [ RunTime:0.0005s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(75,76) [ RunTime:0.0652s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0010s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.0534s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 67 [ RunTime:0.0218s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 68 [ RunTime:0.0214s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 69 [ RunTime:0.0219s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 70 [ RunTime:0.0213s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 71 [ RunTime:0.0219s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 72 [ RunTime:0.0215s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0330s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 74 [ RunTime:0.0210s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 75 [ RunTime:0.0219s ]
+SQL: UPDATE `tag` SET `art_num`='4' WHERE `tag_id` = 76 [ RunTime:0.0214s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('66','67','68','69','70','71','72','73','74','75','76') [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0126s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0013s ]
+SQL: UPDATE `cat` SET `art_num`='59' WHERE `cat_id` = 2 [ RunTime:0.0391s ]
+SQL: UPDATE `cat` SET `art_num`='3' WHERE `cat_id` = 3 [ RunTime:0.0212s ]
+SQL: UPDATE `cat` SET `art_num`='7' WHERE `cat_id` = 4 [ RunTime:0.0223s ]
+SQL: UPDATE `cat` SET `art_num`='1' WHERE `cat_id` = 5 [ RunTime:0.0210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001799s ]
+
+[ 2017-02-26T18:51:33+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000904s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000729s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001463s ]
+
+[ 2017-02-26T19:16:57+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002040s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0114s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001837s ]
+
+[ 2017-02-26T19:17:05+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000924s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001697s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0125s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000304s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025644s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001324s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001463s ]
+
+[ 2017-02-26T19:17:33+08:00 ] ::1 /Blog/index.php/Admin/Art/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001968s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004135s ]
+NOTIC: [2] move_uploaded_file(/Blog/upload/toutu1488107853.jpg): failed to open stream: No such file or directory D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 51 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'D:\app\XAMPP\install\tmp\phpC589.tmp' to '/Blog/upload/toutu1488107853.jpg' D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0133s ]
+SQL: INSERT INTO `art` (`title`,`cat_id`,`small_img`,`content`,`pubtime`) VALUES ('你是不是傻啊','2','/Blog/upload/toutu1488107853.jpg','    				<p>ffffff<br></p>','2017-02-26 19:17:33') [ RunTime:0.1159s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0122s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0009s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('mysql')  [ RunTime:0.0006s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=76 ) [ RunTime:0.0005s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(76,76) [ RunTime:0.0668s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0021s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.0696s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 67 [ RunTime:0.0370s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 68 [ RunTime:0.0207s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 69 [ RunTime:0.0228s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 70 [ RunTime:0.0202s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 71 [ RunTime:0.0219s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 72 [ RunTime:0.0215s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0218s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 74 [ RunTime:0.0214s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 75 [ RunTime:0.0216s ]
+SQL: UPDATE `tag` SET `art_num`='5' WHERE `tag_id` = 76 [ RunTime:0.0214s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('66','67','68','69','70','71','72','73','74','75','76') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0135s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0011s ]
+SQL: UPDATE `cat` SET `art_num`='60' WHERE `cat_id` = 2 [ RunTime:0.0603s ]
+SQL: UPDATE `cat` SET `art_num`='3' WHERE `cat_id` = 3 [ RunTime:0.0208s ]
+SQL: UPDATE `cat` SET `art_num`='7' WHERE `cat_id` = 4 [ RunTime:0.0217s ]
+SQL: UPDATE `cat` SET `art_num`='1' WHERE `cat_id` = 5 [ RunTime:0.0217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001726s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001886s ]
+
+[ 2017-02-26T19:17:34+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000899s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001210s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001339s ]
+
+[ 2017-02-26T19:18:41+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001677s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001369s ]
+
+[ 2017-02-26T19:19:00+08:00 ] ::1 /Blog/index.php/Admin/Art/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003739s ]
+NOTIC: [2] move_uploaded_file(./Blog/upload/toutu1488107939.jpg): failed to open stream: No such file or directory D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 51 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'D:\app\XAMPP\install\tmp\php1664.tmp' to './Blog/upload/toutu1488107939.jpg' D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 51 行.
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0202s ]
+SQL: INSERT INTO `art` (`title`,`cat_id`,`small_img`,`content`,`pubtime`) VALUES ('你是不是傻啊','2','./Blog/upload/toutu1488107939.jpg','    				<p>kkkk<br></p>','2017-02-26 19:18:59') [ RunTime:0.0493s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0162s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0195s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0007s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('mysql')  [ RunTime:0.0006s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=77 ) [ RunTime:0.0005s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(77,76) [ RunTime:0.0624s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0009s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.0354s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 67 [ RunTime:0.0219s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 68 [ RunTime:0.0215s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 69 [ RunTime:0.0222s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 70 [ RunTime:0.0314s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 71 [ RunTime:0.0218s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 72 [ RunTime:0.0214s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0223s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 74 [ RunTime:0.0211s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 75 [ RunTime:0.0232s ]
+SQL: UPDATE `tag` SET `art_num`='6' WHERE `tag_id` = 76 [ RunTime:0.0206s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('66','67','68','69','70','71','72','73','74','75','76') [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0129s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0017s ]
+SQL: UPDATE `cat` SET `art_num`='61' WHERE `cat_id` = 2 [ RunTime:0.0592s ]
+SQL: UPDATE `cat` SET `art_num`='3' WHERE `cat_id` = 3 [ RunTime:0.0213s ]
+SQL: UPDATE `cat` SET `art_num`='7' WHERE `cat_id` = 4 [ RunTime:0.0554s ]
+SQL: UPDATE `cat` SET `art_num`='1' WHERE `cat_id` = 5 [ RunTime:0.0323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001448s ]
+
+[ 2017-02-26T19:19:00+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002353s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026701s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001322s ]
+
+[ 2017-02-26T19:33:59+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001776s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006005s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000478s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041663s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000943s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002704s ]
+
+[ 2017-02-26T19:34:23+08:00 ] ::1 /Blog/index.php/Admin/Art/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+NOTIC: [2] move_uploaded_file(http://localhost:8000/Blog/upload/toutu1488108862.jpg): failed to open stream: HTTP wrapper does not support writeable connections D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 55 行.
+NOTIC: [2] move_uploaded_file(): Unable to move 'D:\app\XAMPP\install\tmp\php2DA3.tmp' to 'http://localhost:8000/Blog/upload/toutu1488108862.jpg' D:\app\XAMPP\install\htdocs\Blog\Application\Admin\Controller\ArtController.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0165s ]
+SQL: INSERT INTO `art` (`title`,`cat_id`,`small_img`,`content`,`pubtime`) VALUES ('nishibushisha','2','./Blog/upload/toutu1488108862jpg','    				<p>ddddd<br></p>','2017-02-26 19:34:22') [ RunTime:0.0792s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0177s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0007s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('mysql')  [ RunTime:0.0006s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=78 ) [ RunTime:0.0005s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(78,76) [ RunTime:0.0588s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0013s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.0526s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 67 [ RunTime:0.0549s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 68 [ RunTime:0.0214s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 69 [ RunTime:0.0216s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 70 [ RunTime:0.0241s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 71 [ RunTime:0.0303s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 72 [ RunTime:0.0211s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0218s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 74 [ RunTime:0.0548s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 75 [ RunTime:0.0219s ]
+SQL: UPDATE `tag` SET `art_num`='7' WHERE `tag_id` = 76 [ RunTime:0.0215s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('66','67','68','69','70','71','72','73','74','75','76') [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0163s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0011s ]
+SQL: UPDATE `cat` SET `art_num`='62' WHERE `cat_id` = 2 [ RunTime:0.0468s ]
+SQL: UPDATE `cat` SET `art_num`='3' WHERE `cat_id` = 3 [ RunTime:0.0546s ]
+SQL: UPDATE `cat` SET `art_num`='7' WHERE `cat_id` = 4 [ RunTime:0.0220s ]
+SQL: UPDATE `cat` SET `art_num`='1' WHERE `cat_id` = 5 [ RunTime:0.0878s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002088s ]
+
+[ 2017-02-26T19:34:24+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002102s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000502s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002794s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003150s ]
+
+[ 2017-02-26T19:37:57+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002055s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001473s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004834s ]
+
+[ 2017-02-26T19:38:15+08:00 ] ::1 /Blog/index.php/Admin/Art/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003863s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0139s ]
+SQL: INSERT INTO `art` (`title`,`cat_id`,`small_img`,`content`,`pubtime`) VALUES ('NNNN','2','./Blog/upload/toutu1488109093jpg','    				','2017-02-26 19:38:14') [ RunTime:0.0814s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0279s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0606s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0006s ]
+SQL: insert ignore into tag(tag_name) values('DDDD') [ RunTime:0.0926s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('DDDD')  [ RunTime:0.0007s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=79 ) [ RunTime:0.0005s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(79,77) [ RunTime:0.1086s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0027s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.0193s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 67 [ RunTime:0.0427s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 68 [ RunTime:0.0213s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 69 [ RunTime:0.0218s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 70 [ RunTime:0.0207s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 71 [ RunTime:0.0221s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 72 [ RunTime:0.0212s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0217s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 74 [ RunTime:0.0323s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 75 [ RunTime:0.0220s ]
+SQL: UPDATE `tag` SET `art_num`='7' WHERE `tag_id` = 76 [ RunTime:0.0214s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 77 [ RunTime:0.0220s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('66','67','68','69','70','71','72','73','74','75','76','77') [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0135s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0016s ]
+SQL: UPDATE `cat` SET `art_num`='63' WHERE `cat_id` = 2 [ RunTime:0.0472s ]
+SQL: UPDATE `cat` SET `art_num`='3' WHERE `cat_id` = 3 [ RunTime:0.2211s ]
+SQL: UPDATE `cat` SET `art_num`='7' WHERE `cat_id` = 4 [ RunTime:0.0890s ]
+SQL: UPDATE `cat` SET `art_num`='1' WHERE `cat_id` = 5 [ RunTime:0.0547s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001754s ]
+
+[ 2017-02-26T19:38:15+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003220s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000946s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001994s ]
+
+[ 2017-02-26T19:40:00+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002401s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000273s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000492s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031702s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000914s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001975s ]
+
+[ 2017-02-26T19:40:21+08:00 ] ::1 /Blog/index.php/Admin/Art/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001391s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001858s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0152s ]
+SQL: INSERT INTO `art` (`title`,`cat_id`,`small_img`,`content`,`pubtime`) VALUES ('fffff','2','http://localhost:8000/Blog/upload/toutu1488109220.jpg','    				<p>cccc<br></p>','2017-02-26 19:40:20') [ RunTime:0.0962s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0112s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0218s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('mysql')  [ RunTime:0.0006s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=80 ) [ RunTime:0.0005s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(80,76) [ RunTime:0.0463s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0015s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.0207s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 67 [ RunTime:0.0216s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 68 [ RunTime:0.0216s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 69 [ RunTime:0.0331s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 70 [ RunTime:0.0435s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 71 [ RunTime:0.0220s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 72 [ RunTime:0.0213s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0217s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 74 [ RunTime:0.0216s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 75 [ RunTime:0.0326s ]
+SQL: UPDATE `tag` SET `art_num`='8' WHERE `tag_id` = 76 [ RunTime:0.0214s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 77 [ RunTime:0.0219s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('66','67','68','69','70','71','72','73','74','75','76','77') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0162s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0010s ]
+SQL: UPDATE `cat` SET `art_num`='64' WHERE `cat_id` = 2 [ RunTime:0.0467s ]
+SQL: UPDATE `cat` SET `art_num`='3' WHERE `cat_id` = 3 [ RunTime:0.0564s ]
+SQL: UPDATE `cat` SET `art_num`='7' WHERE `cat_id` = 4 [ RunTime:0.0530s ]
+SQL: UPDATE `cat` SET `art_num`='1' WHERE `cat_id` = 5 [ RunTime:0.0441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002736s ]
+
+[ 2017-02-26T19:40:21+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001422s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001621s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001292s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001435s ]
+
+[ 2017-02-26T21:46:14+08:00 ] ::1 /Blog/index.php/Admin/Cat/catedit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001703s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001852s ]
+
+[ 2017-02-26T21:46:18+08:00 ] ::1 /Blog/index.php/Admin/Art/artList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001348s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0132s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 0,20   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000228s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000435s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001597s ]
+
+[ 2017-02-26T21:46:27+08:00 ] ::1 /Blog/index.php/Admin/Art/artList/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002410s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0187s ]
+SQL: SELECT COUNT(art_id) AS tp_count FROM `art` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `art_id`,`title`,`pubtime` FROM `art` ORDER BY art_id desc LIMIT 20,20   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000163s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000307s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028711s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001793s ]
+
+[ 2017-02-26T23:00:18+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000912s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001222s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001367s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000186s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001556s ]
+
+[ 2017-02-26T23:01:16+08:00 ] ::1 /Blog/index.php/Admin/Art/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005716s ]
+
+[ 2017-02-26T23:01:29+08:00 ] ::1 /Blog/index.php/Admin/Art/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001629s ]
+SQL: SHOW COLUMNS FROM `art` [ RunTime:0.0112s ]
+SQL: INSERT INTO `art` (`title`,`cat_id`,`small_img`,`content`,`pubtime`) VALUES ('你数不是傻','2','http://localhost:8000/Blog/upload/toutu1488121288.jpg','    				<p>&nbsp; 你是不是傻啊。你一定是啥的对不对<img src=\"http://localhost:8000/Blog/upload/1488121271.jpg\" alt=\"b\" style=\"max-width: 100%;\"></p><p><br></p>','2017-02-26 23:01:28') [ RunTime:0.0711s ]
+SQL: SHOW COLUMNS FROM `tag` [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `relationship` [ RunTime:0.0102s ]
+SQL: SELECT `tag_name` FROM `tag`  [ RunTime:0.0009s ]
+SQL: SELECT `tag_id` FROM `tag` WHERE `tag_name` IN ('js')  [ RunTime:0.0006s ]
+SQL: DELETE FROM `relationship` WHERE ( art_id=81 ) [ RunTime:0.0008s ]
+SQL: insert ignore into relationship(art_id,tag_id) values(81,70) [ RunTime:0.0767s ]
+SQL: SELECT `tag_id`,count(*) as art_num FROM `relationship` GROUP BY tag_id  [ RunTime:0.0015s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 66 [ RunTime:0.0557s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 67 [ RunTime:0.0546s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 68 [ RunTime:0.0216s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 69 [ RunTime:0.0330s ]
+SQL: UPDATE `tag` SET `art_num`='3' WHERE `tag_id` = 70 [ RunTime:0.0327s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 71 [ RunTime:0.0219s ]
+SQL: UPDATE `tag` SET `art_num`='2' WHERE `tag_id` = 72 [ RunTime:0.0569s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 73 [ RunTime:0.0530s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 74 [ RunTime:0.0217s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 75 [ RunTime:0.0438s ]
+SQL: UPDATE `tag` SET `art_num`='8' WHERE `tag_id` = 76 [ RunTime:0.0439s ]
+SQL: UPDATE `tag` SET `art_num`='1' WHERE `tag_id` = 77 [ RunTime:0.0440s ]
+SQL: DELETE FROM `tag` WHERE `tag_id` NOT IN ('66','67','68','69','70','71','72','73','74','75','76','77') [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0131s ]
+SQL: SELECT `cat_id`,count(*) as art_num FROM `art` GROUP BY cat_id  [ RunTime:0.0011s ]
+SQL: UPDATE `cat` SET `art_num`='65' WHERE `cat_id` = 2 [ RunTime:0.0496s ]
+SQL: UPDATE `cat` SET `art_num`='3' WHERE `cat_id` = 3 [ RunTime:0.0438s ]
+SQL: UPDATE `cat` SET `art_num`='7' WHERE `cat_id` = 4 [ RunTime:0.0551s ]
+SQL: UPDATE `cat` SET `art_num`='1' WHERE `cat_id` = 5 [ RunTime:0.0215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002022s ]
+
+[ 2017-02-26T23:01:29+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028456s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001349s ]
+
+[ 2017-02-26T23:12:43+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000086s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001673s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0121s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000384s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001723s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001914s ]
+
+[ 2017-02-26T23:19:48+08:00 ] ::1 /Blog/index.php/Admin/Art/artAdd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001913s ]
+SQL: SHOW COLUMNS FROM `cat` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `cat`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000523s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035971s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002672s ]
+
